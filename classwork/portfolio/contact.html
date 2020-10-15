@@ -2,7 +2,7 @@
 <!--
 	Name: William King
 	Date Created: 13/10/2020
-	Most recent revision: 14/10/2020
+	Most recent revision: 15/10/2020
 -->
 <html lang = "eng">
     <head>
@@ -15,11 +15,70 @@
 		</header>
 
 		<nav>
-
+			<hr />
+			<a href = "index.html">Home</a>
+			<hr />
 		</nav>
+
+		<section>
+			<h2>Information Request</h2>
+			<form action = "submit.html" method = "POST">
+				<!-- First Name -->
+				<label for = "firstName">First Name:</label><br />
+				<input type = "text" id = "firstName" name = "firstName"><br />
+				<!-- Last Name -->
+				<label for = "lastName">Last Name:</label><br/>
+				<input type = "text" id = "lastName" name = "lastName"><br />
+				<!-- Telephone -->
+				<label for = "phone">Phone Number:</labe><br />
+				<input type = "text" id = "phone" name = "phone"><br />
+
+				<!-- Dropdown Menu (Contact) -->
+				<label for = "contact">Best time to call:</label><br />
+				<select id = "contact" name = "contact">
+					<option value = "default" selected>--Select One--</option>
+					<option value = "morning">Morning (8AM to 12PM Eastern)</option>
+					<option value = "afternoon">Afternoon (12PM to 5PM Eastern)</option>
+					<option value = "Evening">Evening (5AM to 8PM Eastern)</option>
+				</select>
+
+				<!-- Checkboxes (Roles Interested) -->
+				<fieldset>
+					<legend>I am interested in (check all that apply):</legend><br />
+					<!-- Front end -->
+					<input type = "checkbox" id = "frontEnd" name = "interest" value = "frontEnd">
+					<label for = "frontEnd">Front End Web Development</label><br/>
+					<!-- Back end -->
+					<input type = "checkbox" id = "backEnd" name = "interest" value = "backEnd">
+					<label for = "backEnd">Back End Web Development</label><br/>
+					<!-- Database -->
+					<input type = "checkbox" id = "database" name = "interest" value = "database">
+					<label for = "database">Database Design</label><br/>
+				</fieldset>
+
+				<!-- Radio buttons (Client form filled?) -->
+				<fieldset>
+					<legend>I have filled in the client questionnaire form:</legend><br />
+					<!-- Yes -->
+					<input type = "radio" id = "choice1" name = "questionnaire" value = "yes">
+					<label for = "choice1">Yes</label><br />
+					<!-- No -->
+					<input type = "radio" id = "choice2" name = "questionnaire" value = "no">
+					<label for = "choice2">No</label><br />
+				</fieldset>
+
+				<!-- Text area (Additional info)-->
+				<label for = "info">Additional Information</label><br />
+				<textarea id = "info" name = "info"></textarea><br />
+				
+				<!-- Submit button -->
+				<input type = "submit" name = "submit" value = "Submit">
+			</form>
+		</section>
 	
 		<footer>
-			
+			<hr />
+			<p>&copy; 2020 William King. All rights reserved.</p>
 		</footer>
 	</body>
 </html>
