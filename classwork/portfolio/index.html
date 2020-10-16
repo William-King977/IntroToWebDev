@@ -2,11 +2,44 @@
 <!--
 	Name: William King
 	Date Created: 13/10/2020
-	Most recent revision: 15/10/2020
+	Most recent revision: 16/10/2020
 -->
 <html lang = "en">
     <head>
 		<title>William King's Portfolio</title>
+		<link href = "styles/main.css" rel = "stylesheet" type = "text/css" />
+		
+		<style>
+			caption {
+				font-weight: bold;
+				font-size: 1.2em;
+				margin-bottom: 8px;
+			}
+
+			table, th, td {
+				border: 1px solid #0d1f2d;
+				border-collapse: collapse;
+				padding: 5px 10px;
+			}
+
+			table {
+				width: 90%;
+				margin: auto;
+			}
+
+			tr {
+				height: 30px;
+			}
+
+			thead {
+				background-color: #546a7b;
+				color: #f2eded;
+			}
+
+			tbody tr:nth-child(odd) {
+				background-color: #e4c3ad;
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -16,49 +49,54 @@
 
 		<!-- Need to add links to projects.html, contact.html, and testimonials.html -->
 		<nav> 
-			<hr />
 			<p><a href = "projects.html">Projects</a></p>
 			<p><a href = "contact.html">Contact Me</a></p>
 			<p><a href = "testimonials.html">Testimonials</a></p>
-			<hr />
 		</nav>
 		
 		<section>
+			<!-- About Me -->
 			<article id = "about">
 				<h2><em>About Me</em></h2>
 				<img src = "images/my-selfie.jpg" width = "250" alt = "Selfie of William"/>
-				<p>Hello my name is William, from <span style = "background-color: lightblue">Hertfordshire</span> and I'm a recent 
+				<p>Hello my name is William, from Hertfordshire and I'm a recent 
 					Computer Science graduate from Swansea University.</p>
 			</article>
 
+			<!-- Past Experiences -->
 			<article id = "experiences">
 				<h2><em>Past Experiences</em></h2>
 				<img src = "images/experience.png" width = "250" alt = "Experiences Icon"/>
-				<table border = "1">
+				<table>
 					<caption>Employment History</caption>
-					<tr> 
-						<th>Years of Employment</th>
-						<th>Title</th>
-						<th>Company</th>
-					</tr>
-					<tr>
-						<td>2017-2020</td>
-						<td>Student</td>
-						<td>Swansea University</td>
-					</tr>
-					<tr>
-						<td>2015-2017</td>
-						<td>Student Librarian</td>
-						<td>Roundwood Park School</td>
-					</tr>
-					<tr>
-						<td>2014</td>
-						<td>Assistant</td>
-						<td>Jewsons Ltd</td>
-					</tr>
+					<thead>
+						<tr> 
+							<th>Years of Employment</th>
+							<th>Title</th>
+							<th>Company</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2017-2020</td>
+							<td>Student</td>
+							<td>Swansea University</td>
+						</tr>
+						<tr>
+							<td>2015-2017</td>
+							<td>Student Librarian</td>
+							<td>Roundwood Park School</td>
+						</tr>
+						<tr>
+							<td>2014</td>
+							<td>Assistant</td>
+							<td>Jewsons Ltd</td>
+						</tr>
+					</tbody>
 				</table>
 			</article>
 
+			<!-- Hobbies -->
 			<article id = "hobbies">
 				<h2><em>Hobbies</em></h2>
 				<img src = "images/weight-training.png" width = "250" alt = "Hobbies Icon"/>
@@ -81,7 +119,6 @@
 		</section>
 
 		<footer>
-			<hr />
 			<p>&copy; 2020 William King. All rights reserved.</p>
 		</footer>
 	</body>
