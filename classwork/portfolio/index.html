@@ -10,32 +10,40 @@
 		<link href = "styles/main.css" rel = "stylesheet" type = "text/css" />
 		
 		<style>
+			/* Article styling (content positioning of each section) */
+			article img {
+				float: left;
+				padding-right: 10px;
+			}
+			article {
+				margin-bottom: 30px;
+			}
+			.right-content {
+				float: left;
+			}
+
+			/* Table styling */
 			caption {
 				font-weight: bold;
 				font-size: 1.2em;
 				margin-bottom: 8px;
 			}
-
 			table, th, td {
 				border: 1px solid #0d1f2d;
 				border-collapse: collapse;
 				padding: 5px 10px;
 			}
-
 			table {
 				width: 90%;
 				margin: auto;
 			}
-
 			tr {
 				height: 30px;
 			}
-
 			thead {
 				background-color: #546a7b;
 				color: #f2eded;
 			}
-
 			tbody tr:nth-child(odd) {
 				background-color: #e4c3ad;
 			}
@@ -48,74 +56,89 @@
 		</header>
 
 		<!-- Need to add links to projects.html, contact.html, and testimonials.html -->
-		<nav> 
+		<nav>
 			<p><a href = "projects.html">Projects</a></p>
 			<p><a href = "contact.html">Contact Me</a></p>
 			<p><a href = "testimonials.html">Testimonials</a></p>
+			<div class = "clear-float"></div>
 		</nav>
 		
 		<section>
 			<!-- About Me -->
 			<article id = "about">
 				<h2><em>About Me</em></h2>
-				<img src = "images/my-selfie.jpg" width = "250" alt = "Selfie of William"/>
-				<p>Hello my name is William, from Hertfordshire and I'm a recent 
+				<img src = "images/my-selfie.jpg" width = "250" alt = "Picture of William King" />
+				<p>Hello! My name is William, from Hertfordshire, and I'm a recent 
 					Computer Science graduate from Swansea University.</p>
+				<p>I am keen to pursue a career path involving software development, analytics and data, having done my 
+					3rd year project, <em>Fraud Detection using Machine Learning Algorithms</em>, as well as taking relevant 
+					modules such as <em>Big Data and Machine Learning</em>, <em>Visual Analytics</em> and 
+					<em>Software Engineering</em>.</p>
+				<p>After carrying out my project throughout of 3rd year and enjoying the content 
+					of the relevant modules, I knew that these are the areas that I definately want to pursue as a career path. 
+					</p>
+				<div class = "clear-float"></div>
 			</article>
 
 			<!-- Past Experiences -->
 			<article id = "experiences">
 				<h2><em>Past Experiences</em></h2>
 				<img src = "images/experience.png" width = "250" alt = "Experiences Icon"/>
-				<table>
-					<caption>Employment History</caption>
-					<thead>
-						<tr> 
-							<th>Years of Employment</th>
-							<th>Title</th>
-							<th>Company</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>2017-2020</td>
-							<td>Student</td>
-							<td>Swansea University</td>
-						</tr>
-						<tr>
-							<td>2015-2017</td>
-							<td>Student Librarian</td>
-							<td>Roundwood Park School</td>
-						</tr>
-						<tr>
-							<td>2014</td>
-							<td>Assistant</td>
-							<td>Jewsons Ltd</td>
-						</tr>
-					</tbody>
-				</table>
+				<div class = "right-content">
+					<table>
+						<caption>Employment History</caption>
+						<thead>
+							<tr> 
+								<th>Years of Employment</th>
+								<th>Title</th>
+								<th>Company</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2017-2020</td>
+								<td>Student</td>
+								<td>Swansea University</td>
+							</tr>
+							<tr>
+								<td>2015-2017</td>
+								<td>Student Librarian</td>
+								<td>Roundwood Park School</td>
+							</tr>
+							<tr>
+								<td>2014</td>
+								<td>Assistant</td>
+								<td>Jewsons Ltd</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class = "clear-float"></div>
 			</article>
 
 			<!-- Hobbies -->
 			<article id = "hobbies">
 				<h2><em>Hobbies</em></h2>
 				<img src = "images/weight-training.png" width = "250" alt = "Hobbies Icon"/>
-				<ul>
-					<li>Favourite Films</li>
-						<ol>
-							<li>Ip Man</li>
-							<li>Rush Hour</li>
-							<li>Police Story</li>
-						</ol>
-					
-					<li>Sports</li>
-						<ul>
-							<li>Swimming</li>
-							<li>Weight training</li>
-							<li>Tae Kwon Do</li>
-						</ul>
-				</ul>
+				<div class = "right-content">
+					<ul>
+						<li>Favourite Films</li>
+							<ol>
+								<li>Ip Man</li>
+								<li>Rush Hour</li>
+								<li>Police Story</li>
+							</ol>
+						
+						<li>Sports</li>
+							<ul>
+								<li>Swimming</li>
+								<li>Weight training</li>
+								<li>Tae Kwon Do</li>
+							</ul>
+					</ul>
+				</div>
 			</article>
+			<div class = "clear-float"></div>
 		</section>
 
 		<footer>
