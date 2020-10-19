@@ -1,3 +1,4 @@
+
 // These JavaScript comments are instructions.
 // Follow them step by step.
 // When asked, write code to complete the task described.
@@ -21,7 +22,9 @@ for (var n = 1; n <= 7; n++) {
 // Print each number to the JavaScript console.
 console.log("FOR ONE TO TEN");
 // Write your code here:
-
+for (var n = 1; n <= 10; n++) {
+    console.log(n);
+}
 
 
 // 2. COUNT BY TWOS FROM TWO TO TWELVE
@@ -39,7 +42,9 @@ console.log("FOR ONE TO TEN");
 // 12
 console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 // Write your code here:
-
+for (var n = 2; n <= 12; n = n + 2) {
+    console.log(n);
+}
 
 
 // 3. COUNT BACKWARD FROM SIX
@@ -58,7 +63,9 @@ console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 // 0
 console.log("COUNT BACKWARD FROM SIX");
 // Write your code here:
-
+for (var n = 6; n >= 0; n--) {
+    console.log(n);
+}
 
 
 // 4. SUM EVENS
@@ -77,8 +84,13 @@ var sum = 0;    // We add even numbers to this variable.
 // What happens if you set limit to a negative number?
 console.log("SUM EVENS");
 // Write your code here:
-
+for (var n = 0; n <= limit; n++) {
+    if (n % 2 === 0) {
+        sum = sum + n;
+    }
+}
 console.log("limit = %s, sum = %s", limit, sum);
+
 
 // 5. FIND A FAVORITE NUMBER
 // =========================
@@ -95,16 +107,81 @@ var kaisFavoriteNumber = 44;    // Kai's favorite number
 console.log("FIND A FAVORITE NUMBER");
 // Write your code here:
 
+// This basically prints the smallest 'favorite' number.
+// DOESN'T WORK WITH NEGATIVE NUMBERS.
+var selectedNumber;
+for (var n = 0; n <= winniesFavoriteNumber && n <= kaisFavoriteNumber; n++) {
+    selectedNumber = n;
+}
+console.log(selectedNumber);
 
 
 // CHALLENGE: WHILE LOOPS
 // ======================
 // Try solving the five tasks above with a while loop in place of a for loop.
+console.log("----- WHILE LOOP VERSIONS -----");
+
+// 1) ONE TO TEN
+// =============
+console.log("FOR ONE TO TEN");
+var n = 1;
+
+while (n <= 10) {
+    console.log(n);
+    n++;
+}
 
 
+// 2) TWO TO TWELVE
+// ================
+console.log("FOR TWO TO TWELVE");
+var n = 2;
+
+while (n <= 12) {
+    console.log(n);
+    n = n + 2;
+}
 
 
+// 3) COUNT BACK FROM SIX
+// ======================
+console.log("COUNT BACK FROM SIX");
+var n = 6;
 
+while (n >= 0) {
+    console.log(n);
+    n--;
+}
+
+
+// 4) SUM EVENS
+// ============
+console.log("SUM EVENS");
+var limit = 10;
+var sum = 0;
+var n = 0;
+
+while (n <= limit) {
+    if (n % 2 === 0) {
+        sum = sum + n;
+    }
+    n++;
+}
+console.log("limit = %s, sum = %s", limit, sum)
+
+
+// 5) FIND A FAVORITE NUMBER
+// =========================
+var winniesFavoriteNumber = 53;
+var kaisFavoriteNumber = 44;
+var selectedNumber;
+var n = 0;
+
+while (n <= winniesFavoriteNumber && n <= kaisFavoriteNumber) {
+    selectedNumber = n;
+    n++;
+}
+console.log(selectedNumber);
 
 /**********************************
  * The Software Guild
