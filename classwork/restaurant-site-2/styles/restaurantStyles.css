@@ -1,0 +1,67 @@
+/*
+Creator: William King
+Date created: 17/10/2020
+Date last modified: 19/10/2020
+*/
+
+/* Online fonts (Patua One and Roboto Slab) */
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto+Slab&display=swap');
+
+body {
+    font-family: "Roboto Slab", sans-serif;
+    background-color: burlywood;
+    color: black;
+}
+
+header {
+    font-family: "Patua One", sans-serif;
+}
+
+header, footer {
+    background-color: saddlebrown;
+    color: gold;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}
+
+nav {
+    background-color: sandybrown;
+    border-top: 4px dashed black;
+    border-bottom: 4px dashed black;
+    padding: 10px 0px 10px 0px;
+}
+
+nav .btn {
+    /*
+    background-color: saddlebrown;
+    border: 2px solid black;
+    */
+    color: yellow;
+}
+
+nav .btn:visited {
+    color: darkred;
+}
+
+/* Add a gap between the navigation buttons and the main content */
+section[name = "main-content"], form {
+    padding-top: 20px;
+}
+
+/* For new tab links */
+a:link[target = "_blank"] {
+    color: blue;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:active {
+    text-decoration: none;
+}

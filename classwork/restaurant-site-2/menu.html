@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+	Name: William King
+	Date Created: 15/10/2020
+	Most recent revision: 19/10/2020
+-->
+<html lang = "eng">
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, intial-scale = 1, shrink-to-fit = no">
+
+		<title>Menu</title>
+		
+		<!-- Bootstrap CND copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!-- External CSS -->
+		<link href = "styles/restaurantStyles.css" rel = "stylesheet" type = "text/css" />
+
+		<style>
+			/* Food items styling */
+			#menu-items {
+				text-align: center;
+				background-color: rgb(207, 107, 60);
+			}
+			h3 {
+				color: gold;
+			}
+
+			/* Table styling (Beverages) */
+			caption {
+				color: gold;
+				font-size: 1.5em;
+				font-weight: bold;
+				caption-side: top; /* It was at the bottom initially for some reason */
+			}
+			table, td {
+				border: 3px solid black;
+				border-collapse: collapse;
+				padding: 10px 0px 10px 5px;
+			}
+			table {
+				width: 90%;
+				margin: auto;
+				text-align: left;
+			}
+			tbody tr:nth-child(odd) {
+				background-color: burlywood;
+			}
+			tbody tr:nth-child(even) {
+				background-color: sandybrown;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Will King's Grill</h1>
+		</header>
+
+		<nav>
+			<a class = "btn" href = "index.html">Home</a>
+			<a class = "btn" href = "">Menu</a>
+			<a class = "btn" href = "contact.html">Contact Us</a>
+        </nav>
+        
+        <section id = "menu-items" name = "main-content">
+			<!-- First row of food items -->
+			<section id = "first-row" class = "row">
+				<article id = "burger-fries" class = "col-lg-4 col-mid col-sml">
+					<h3>Burger and Fries</h3>
+					<p>An American Classic!<br />
+					Your choice - with or without cheese<br /> 
+					Pickle, onion, tomato, and lettuce<br/>
+					Served with our famous thick cut<br />
+					french fries<br />
+					$7.95</p>
+				</article>
+				<article id = "hotdog-chips" class = "col-lg-4 col-mid col-sml">
+					<h3>Hot Dog and Chips</h3>
+					<p>A Summer Classic!<br />
+					Your choice - white or wheat bun<br /> 
+					Relish, mustard, and ketchup<br/>
+					Served with our house-made chips<br />
+					$7.95</p>
+				</article>
+				<article id = "italian-sausage" class = "col-lg-4 col-mid col-sml">
+					<h3>Italian Sausage and Peppers</h3>
+					<p>An All-Time Favorite!<br />
+					Your choice - mild or spicy Cole Slaw<br /> 
+					Served with garlic mashers<br />
+					$10.95</p>
+				</article>
+			</section>
+
+			<!-- Second row of food items -->
+			<section id = "second-row" class = "row">
+				<article id = "tender-sandwich" class = "col-lg-4 col-mid col-sml">
+					<h3>Tenderloin Sandwich and Chips</h3>
+					<p>Really Hits the Spot!<br />
+					Plain or Sesame Seed Bun<br /> 
+					Pickle, onion, tomato, and lettuce<br />
+					Served with our house-made chips<br />
+					$8.95</p>
+				</article>
+				<article id = "house-salad" class = "col-lg-4 col-mid col-sml">
+					<h3>House Salad</h3>
+					<p>On the Lighter Side<br />
+					Your choice - with or without cheese<br /> 
+					Iceberg lettuce, tomatoes, peppers<br />
+					Thousand Island or Ranch<br />
+					Dressing Served with a dinner roll<br />
+					$6.95</p>
+				</article>
+				<article id = "brisket-sandwich" class = "col-lg-4 col-mid col-sml">
+					<h3>Brisket Sandwich and Fries</h3>
+					<p>A Taste of Texas!<br />
+					Smoked Brisket on thick-cut<br /> 
+					Texas Toast<br />
+					Cole Slaw<br />
+					Served with our famous thick-cut<br />
+					french fries<br />
+					$7.95</p>
+				</article>
+			</section>
+
+			<!-- Table of beverages -->
+			<section id = "beverages">
+				<table>
+					<caption>Beverages</caption>
+					<tbody>
+						<tr>
+							<td>Root Beer</td>
+							<td>$3.00</td>
+						</tr>
+						<tr>
+							<td>Bottled Water</td>
+							<td>$1.25</td>
+						</tr>
+						<tr>
+							<td>Lemonade</td>
+							<td>$1.00</td>
+						</tr>
+						<tr>
+							<td>Iced Tea</td>
+							<td>$1.25</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+        </section>
+	
+		<footer>
+			<p>Downtown, Bushville, Olorado, DV1 2WW <br />
+                01234 567890</p>
+		</footer>
+	</body>
+</html>
