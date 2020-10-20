@@ -76,24 +76,32 @@ console.log("expected: Saturn,Black Lab,Borzoi,Pug\nactual: " + merged);
 // from the first and return the result.
 // The function should NOT alter either parameter.
 // Write your code here:
-function subtractArray(array1, array2) {
+function subtractArray(mainArray, removeArray) {
     var newArray = Array();
 
     // Copy contents of the main array to the newArray. 
-    for (var i = 0; i < array1.length; i++) {
-        newArray.push(array1[i]);
+    for (var i = 0; i < mainArray.length; i++) {
+        newArray.push(mainArray[i]);
     }
 
     // Remove any matching elements from the newArray.
-    for (var i = 0; i < array2.length; i++) {
+    for (var i = 0; i < removeArray.length; i++) {
         for (var j = 0; j < newArray.length; j++) {
-            if (newArray[j] === array2[i]) {
-                // Remove the matching element.
-                newArray.splice(j, 1);
-                // Reset the index to the beginning.
+            if (newArray[j] === removeArray[i]) {
+                // Remove the matching element using slicing.
+                // Basically making two slices without the matching element
+                // and then putting the slices back together.
+                firstHalf = newArray.slice(0, j);
+                secondHalf = newArray.slice(j + 1, newArray.length);
+                newArray = firstHalf
+
+                // Add elements of the second half of newArray.
+                for (var k = 0; k < secondHalf.length; k++) {
+                    newArray.push(secondHalf[k]);
+                }
+                // Reset the index to the previous to re-iterate the current index.
                 // NOTE: It's possible to skip an element without resetting the index.
-                // Set to -1 because it will increment to 0 before the next iteration.
-                j = -1; 
+                j--; 
             }
         }
     }
@@ -102,6 +110,7 @@ function subtractArray(array1, array2) {
 
 
 // Uncomment the code below to verify your function is working.
+// NOTE: Changed the console logs to show array contents instead of "Array(ARRAY LENGTH)".
 console.log("subtractArray =====");
 var result = subtractArray([1, 2, 3, 4, 5], [2, 4, 6]);
 console.log("expected: 1,3,5\nactual: " + result);
