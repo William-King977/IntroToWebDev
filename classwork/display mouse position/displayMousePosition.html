@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+	Name: William King
+	Date Created: 17/10/2020
+	Most recent revision:
+-->
+<html lang = "eng">
+    <head>
+        <meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, intial-scale = 1, shrink-to-fit = no">
+		
+		<title>CODE-ALONG: Display Mouse Position</title>
+
+		<!-- Bootstrap CND copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	</head>
+
+	<body>
+        <div class = "container">
+            <h1>CODE-ALONG: Display Mouse Position</h1>
+            <fieldset>
+                <legend>Mouse Position</legend>
+                <div>
+                    <label>X:</label> 
+                    <span id = "mouseX">Untracked</span>
+                </div>
+                <div>
+                    <label>Y:</label> 
+                    <span id = "mouseY">Untracked</span>
+                </div>
+            </fieldset>
+            <div>
+                <button id = "btnStartTrack" class = "btn">Start mouse tracking.</button>
+                <!-- Highlight this button by default (tracking is disabled by default as well) -->
+                <button id = "btnStopTrack" class = "btn btn-success">Stop mouse tracking.</button>
+            </div>
+        </div>
+        <script src = "displayMousePosition.js"></script>
+    </body>
+</html>
