@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+	Name: William King
+	Date Created: 22/10/2020
+	Most recent revision:
+-->
+
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+		<title>Display Evens</title>
+
+		<!-- Bootstrap CND copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <style>
+            label {
+                display: inline-block;
+                text-align: right;
+            }
+        </style>
+	</head>
+	
+	<body>
+		<div class = "container">
+            <h1>Display Evens</h1>
+            <form name = "displayEvens" class = "form-horizontal" onsubmit = "return validate();" 
+                onreset = "resetView();" novalidate>
+                <!-- Starting Number -->
+                <div class = "form-group row">
+                    <label for = "startNum" class = "col-sm-2 col-form-label">Starting Number</label>
+                    <!-- Seperate div for the inputbox is needed to format the labels -->
+                    <div class = "col-sm-10">
+                        <input type = "number" class = "form-control" id = "startNum" required>
+                        <div class = "invalid-feedback">
+                            Starting Number is required and must be a number.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ending Number -->
+                <div class = "form-group row">
+                    <label for = "endNum" class = "col-sm-2 col-form-label">Ending Num</label>
+                    <div class = "col-sm-10">
+                        <input type = "number" class = "form-control" id = "endNum" required>
+                        <div class = "invalid-feedback">
+                            Ending Number is required and must be a number.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Set -->
+                <div class = "form-group row">
+                    <label for = "step" class = "col-sm-2 col-form-label">Step</label>
+                    <div class = "col-sm-10">
+                        <input type = "number" class = "form-control" id = "step" required min = "1">
+                        <div class = "invalid-feedback">
+                            Step is required, must be a number and be bigger than 0.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row for the button -->
+                <div class = "form-row">
+                    <div class = "form-group col">
+                        <button type = "submit" id = "submitButton" class = "btn btn-primary">Display Evens</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Displaying results -->
+            <div id = "results">
+                <!-- The results will be inserted inside here as they are calculated -->
+            </div>
+        </div> <!-- end of .container -->
+        <script src = "displayEvens.js"></script>
+	</body>
+</html>
