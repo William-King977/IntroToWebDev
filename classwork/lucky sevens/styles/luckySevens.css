@@ -1,0 +1,29 @@
+/* Align items to the middle */
+h1 {
+	text-align: center;
+}
+label {
+	display: inline-block;
+	text-align: right;
+	width: 50%;
+}
+button[type = "submit"] {
+	display: block;
+	margin: auto;
+}
+
+/* Seperation between input area and results */
+#results-section {
+    border-top-style: solid;
+}
+
+/* Table styling */
+td, tr {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}

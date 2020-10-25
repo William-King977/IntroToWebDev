@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+	Name: William King
+	Date Created: 24/10/2020
+	Most recent revision: 25/10/2020
+-->
+<html lang = "eng">
+	<head>
+		<title>Lucky Sevens</title>
+		<!-- Bootstrap CND copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!-- External styles -->
+		<link rel = "stylesheet" type = "text/css" href = "styles/luckySevens.css"></link>
+	</head>
+
+	<body>
+		<main class = "container">
+			<h1>Lucky Sevens</h1>
+			<!-- Form to recieve input -->
+			<form name = "luckySevens" class = "form-horizontal" onsubmit = "return validate();" 
+				onreset = "resetView();" novalidate>
+				<!-- Starting Bet -->
+				<div class = "form-group row">
+					<label for = "startBet" class = "col-form-label">Starting Bet:</label>
+					<!-- Seperate div for the inputbox is needed to format the labels -->
+					<div class = "col">
+						<input type = "number" class = "form-control" id = "startBet" placeholder = "$0.00" min = "1" required>
+						<div class = "invalid-feedback">
+							Starting Bet is required, must be in whole dollars and be bigger than 0.
+						</div> 
+					</div> <!-- end of .col div -->
+				</div> <!-- end of .form-group row div -->
+
+				<!-- Row for the button -->
+				<div class = "form-group row">
+					<div class = "col">
+						<button type = "submit" id = "submitButton" class = "btn btn-primary">Play</button>
+					</div> <!-- end of .col div -->
+				</div> <!-- end of .form-group row div -->
+			</form>
+
+			<!-- Displaying results -->
+			<section id = "results-section" style = "display: none">
+				<h1 id = "table-title">Results</h1>
+				<!-- Table to hold results -->
+				<table id = "results-table" class = "table table-striped">
+					<tr>
+						<th>Starting Bet</th>
+						<td><span id = "startingBet"></span></td>
+					</tr>
+					<tr>
+						<th>Total Rolls Before Going Broke</th>
+						<td><span id = "rollsBeforeBroke"></span></td>
+					</tr>
+					<tr>
+						<th>Highest Amount Won</th>
+						<td><span id = "highestWon"></span></td>
+					</tr>
+					<tr>
+						<th>Roll Count at Highest Amount Won</th>
+						<td><span id = "rollsAtHighestWon"></span></td>
+					</tr>
+				</table>
+			</section>
+		</main>
+
+		<script type = "text/javascript" src = "scripts/luckySevens.js"></script>
+	</body>
+</html>
