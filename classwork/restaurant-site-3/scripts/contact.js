@@ -8,7 +8,7 @@ function resetForm() {
 // Validates the form input.
 function validate() {
 	contactForm.className = "needs-validation";
-
+	
 	if (!contactForm.checkValidity()) {
 		contactForm.className = "was-validated"
 		return false;
