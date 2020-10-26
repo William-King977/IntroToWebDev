@@ -5,52 +5,52 @@ Date last modified: 19/10/2020
 */
 
 label {
-    font-size: 1.1em;
-    display: inline-block;
-    text-align: right;
-    vertical-align: top;
-    width: 50%; /* Pushes the labels to the centre of the screen */
+	font-size: 1.1em;
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+	width: 50%; /* Pushes the labels to the centre of the screen */
 }
 
 /* Reposition the checkbox/radio button labels */
 .visited .rb, .availability .cb {
-    width: auto;
-    text-align: left;
-    margin-right: 20px; /* width between each radio button/check box */
+	width: auto;
+	text-align: left;
+	margin-right: 20px; /* width between each radio button/check box */
 }
 
 input, textarea, select {
-    font-size: 1.1em;
-    margin-bottom: 10px;
+	font-size: 1.1em;
+	margin-bottom: 10px;
 }
 
 input[type = "text"], select {
-    border: 2px solid black;
-    border-radius: 3px;
+	border: 2px solid black;
+	border-radius: 3px;
 }
 
 textarea {
-    height: 200px;
-    box-sizing: border-box;
-    border: 2px solid black;
-    border-radius: 3px;
-    resize: none;
+	height: 200px;
+	box-sizing: border-box;
+	border: 2px solid black;
+	border-radius: 3px;
+	resize: none;
 }
 
 input[type = "submit"] {
-    background-color: saddlebrown;
-    color: gold;
-    display: block;
-    margin: auto;
-    margin-bottom: 10px;
+	background-color: saddlebrown;
+	color: gold;
+	display: block;
+	margin: auto;
+	margin-bottom: 10px;
 }
 
 input[type = submit]:hover {
-    background-color: gold;
-    color: saddlebrown;
+	background-color: gold;
+	color: saddlebrown;
 }
 
 /* Bold required fields */ 
 label[name = "required"] {
-    font-weight: bold;
+	font-weight: bold;
 }

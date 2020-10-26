@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--
+	Name: William King
+	Date Created: 15/10/2020
+	Most recent revision: 25/10/2020
+-->
+<html lang = "eng">
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, intial-scale = 1, shrink-to-fit = no">
+
+		<title>Menu</title>
+		
+		<!-- Bootstrap CND copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!-- Icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- External CSS -->
+		<link href = "styles/restaurantStyles.css" rel = "stylesheet" type = "text/css" />
+		<link href = "styles/menu.css" rel = "stylesheet" type = "text/css">
+	</head>
+	
+	<body>
+		<header class = "jumbotron">
+			<h1 style = "font-size: 45pt">Will King's Grill</h1>
+			<h4 class = "mt-4 font-italic" style = "color: white">New restaurant opening in Texas!</h4>
+			<a class = "btn mt-3" href = "menu.html#menu-carousel">Find Out More</a>
+		</header>
+
+		<nav>
+			<a class = "btn" href = "index.html"><i class = "fa fa-home"></i></a>
+			<a class = "btn btn-lg" href = "">Menu</a>
+			<a class = "btn" href = "contact.html">Contact Us</a>
+		</nav>
+
+		<!-- message displays if the user has JavaScript disabled -->
+		<noscript>
+			<h4 class = "text-center">JavaScript is disabled on your browser. 
+				This site is best viewed with JavaScript enabled.</h4>
+		</noscript>
+		
+		<section id = "menu-items" name = "main-content">
+			<!-- First row of food items -->
+			<section id = "first-row" class = "row">
+				<article id = "burger-fries" class = "col-lg-4 col-mid col-sml">
+					<h3>Burger and Fries</h3>
+					<p>An American Classic!<br />
+					Your choice - with or without cheese<br /> 
+					Pickle, onion, tomato, and lettuce<br/>
+					Served with our famous thick cut<br />
+					french fries<br />
+					$7.95</p>
+				</article>
+				<article id = "hotdog-chips" class = "col-lg-4 col-mid col-sml">
+					<h3>Hot Dog and Chips</h3>
+					<p>A Summer Classic!<br />
+					Your choice - white or wheat bun<br /> 
+					Relish, mustard, and ketchup<br/>
+					Served with our house-made chips<br />
+					$7.95</p>
+				</article>
+				<article id = "italian-sausage" class = "col-lg-4 col-mid col-sml">
+					<h3>Italian Sausage and Peppers</h3>
+					<p>An All-Time Favorite!<br />
+					Your choice - mild or spicy Cole Slaw<br /> 
+					Served with garlic mashers<br />
+					$10.95</p>
+				</article>
+			</section> <!-- end of #first-row section -->
+
+			<!-- Second row of food items -->
+			<section id = "second-row" class = "row">
+				<article id = "tender-sandwich" class = "col-lg-4 col-mid col-sml">
+					<h3>Tenderloin Sandwich and Chips</h3>
+					<p>Really Hits the Spot!<br />
+					Plain or Sesame Seed Bun<br /> 
+					Pickle, onion, tomato, and lettuce<br />
+					Served with our house-made chips<br />
+					$8.95</p>
+				</article>
+				<article id = "house-salad" class = "col-lg-4 col-mid col-sml">
+					<h3>House Salad</h3>
+					<p>On the Lighter Side<br />
+					Your choice - with or without cheese<br /> 
+					Iceberg lettuce, tomatoes, peppers<br />
+					Thousand Island or Ranch<br />
+					Dressing Served with a dinner roll<br />
+					$6.95</p>
+				</article>
+				<article id = "brisket-sandwich" class = "col-lg-4 col-mid col-sml">
+					<h3>Brisket Sandwich and Fries</h3>
+					<p>A Taste of Texas!<br />
+					Smoked Brisket on thick-cut<br /> 
+					Texas Toast<br />
+					Cole Slaw<br />
+					Served with our famous thick-cut<br />
+					french fries<br />
+					$7.95</p>
+				</article>
+			</section> <!-- end of #second-row section -->
+
+			<!-- Table of beverages -->
+			<section id = "beverages">
+				<table>
+					<caption>Beverages</caption>
+					<tbody>
+						<tr>
+							<td>Root Beer</td>
+							<td>$3.00</td>
+						</tr>
+						<tr>
+							<td>Bottled Water</td>
+							<td>$1.25</td>
+						</tr>
+						<tr>
+							<td>Lemonade</td>
+							<td>$1.00</td>
+						</tr>
+						<tr>
+							<td>Iced Tea</td>
+							<td>$1.25</td>
+						</tr>
+					</tbody>
+				</table>
+			</section> <!-- end of #beverages section -->
+		</section> <!-- end of #menu-items section -->
+
+		<!-- carousel -->
+		<div id = "menu-carousel" class = "carousel slide" data-ride = "carousel">
+			<!-- indicators -->
+			<ul class = "carousel-indicators">
+				<li data-target = "#menu-carousel" data-slide-to = "0" class = "active"></li>
+				<li data-target = "#menu-carousel" data-slide-to = "1"></li>
+				<li data-target = "#menu-carousel" data-slide-to = "2"></li>
+			</ul>
+
+			<!-- slideshow -->
+			<div class = "carousel-inner">
+				<!-- New Location -->
+				<div class = "carousel-item active">
+					<!-- image from: https://pixabay.com/photos/chicken-meat-skewer-food-lunch-3183558/ -->
+					<img src = "images/new-grill.jpg" alt = "Opening in a New Location">
+					<div class = "carousel-caption">
+						<h3>We're opening in Texas!</h3>
+						<p>With our successful opening in Olorado, we are in the progress of opening 
+							a new restaurant in Texas. More updates coming soon!</p>
+					</div>
+				</div>
+				<!-- Seaonal Menu -->
+				<div class = "carousel-item">
+					<!-- image from: https://pixabay.com/photos/jack-o-lanterns-lit-pumpkins-3735386/ -->
+					<img src = "images/halloween.jpg" alt = "Seasonal Menu">
+					<div class = "carousel-caption">
+						<h3>New Halloween Menu</h3>
+						<p>Trick or Treat? Definately treat! Because we're going to release our 
+							Halloween menu next week, with new options for the spooky season.</p>
+					</div>
+				</div>
+				<!-- Drink of the Month -->
+				<div class = "carousel-item">
+					<!-- image from: https://pixabay.com/photos/cup-coffee-vintage-drink-cafe-2315565/ -->
+					<img src = "images/drink-of-the-month.jpg" alt = "Drink of the Month">
+					<div class = "carousel-caption">
+						<h3>Drink of the Month: Root Beer</h3>
+						<p>By popular demand, <strong>Root Beer</strong> is our new <em>Drink of the Month!</em> 
+							You know what that means? Buy this drink at a 10% discount for this month only!</p>
+					</div>
+				</div>
+			</div><!-- end of .carousel-inner div -->
+
+			<!-- left and right controls -->
+			<a class = "carousel-control-prev" href = "#menu-carousel" data-slide = "prev">
+				<span class = "carousel-control-prev-icon"></span>
+			</a>
+			<a class = "carousel-control-next" href = "#menu-carousel" data-slide = "next">
+				<span class = "carousel-control-next-icon"></span>
+			</a>
+		</div>
+
+		<!-- CND links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+			
+		<footer>
+			<p>Downtown, Bushville, Olorado, DV1 2WW <br />
+				01234 567890</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+/*
+Creator: William King
+Date created: 18/10/2020
+Date last modified: 25/10/2020
+*/
+
+label {
+	font-size: 1.1em;
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+	width: 45%; /* Pushes the labels towards the centre of the screen */
+}
+
+#visited-rb label, #availability-cb label {
+	margin-right: 5px; /* width between each radio button/check box */
+}
+
+.col input, .col select {
+	color: black;
+	border: 2px solid black;
+	border-radius: 3px;
+}
+
+.col textarea {
+	color: black;
+	height: 150px;
+	box-sizing: border-box;
+	border: 2px solid black;
+	border-radius: 3px;
+	resize: none;
+}
+
+/* Bold required fields */ 
+label[name = "required"] {
+	font-weight: bold;
+}
+
+/* Invalid messages styling */
+.invalid-feedback {
+	color: firebrick;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+/* Submit button styling */
+button[type = "submit"] {
+	border: 2px solid black;
+	background-color: saddlebrown;
+	color: gold;
+	display: inline-block;
+	text-align: center;
+}
+button[type = "submit"]:hover {
+	border: 2px solid black;
+	font-weight: bold;
+	background-color: gold;
+	color: saddlebrown;
+}
+
+/* Reset button styling */
+button[type = "reset"] {
+	border: 2px solid black;
+	background-color: brown;
+	color: gold;
+	display: inline-block;
+	text-align: center;
+}
+button[type = "reset"]:hover {
+	border: 2px solid black;
+	font-weight: bold;
+	background-color: gold;
+	color: brown;
+}

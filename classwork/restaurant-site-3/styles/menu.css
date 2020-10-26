@@ -1,0 +1,53 @@
+/*
+Creator: William King
+Date created: 26/10/2020
+Date last modified: 
+*/
+
+/* Food items styling */
+body {
+	/* Override the body colour */
+	background-color: rgb(207, 107, 60);
+}
+#menu-items {
+	text-align: center;
+}
+#first-row, #second-row {
+	width: 100%; /* There was an unexplained extra gap when the row class was added */
+}
+h3 {
+	color: gold;
+}
+
+/* Table styling (Beverages) */
+caption {
+	color: gold;
+	font-size: 1.5em;
+	font-weight: bold;
+	caption-side: top; /* It was at the bottom initially for some reason */
+}
+table, td {
+	border: 3px solid black;
+	border-collapse: collapse;
+	padding: 10px 0px 10px 5px;
+}
+table {
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+	text-align: left;
+}
+tbody tr:nth-child(odd) {
+	background-color: burlywood;
+}
+tbody tr:nth-child(even) {
+	background-color: sandybrown;
+}
+
+/* Carousel styling */
+img {
+	width: 100%;
+}
+.carousel-caption {
+	background:rgb(0, 0, 0, 0.7);
+}

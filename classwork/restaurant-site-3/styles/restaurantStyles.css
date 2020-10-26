@@ -4,20 +4,30 @@ Date created: 17/10/2020
 Date last modified: 19/10/2020
 */
 
-/* Online fonts (Patua One and Roboto Slab) */
+/* Online fonts from google (Patua One and Roboto Slab) */
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto+Slab&display=swap');
 
 body {
 	font-family: "Roboto Slab", sans-serif;
-	background-color: burlywood;
+	background-color: rgb(240, 221, 197);
 	color: black;
 }
 
-header {
+/* jumbotron styles */
+.jumbotron {
 	font-family: "Patua One", sans-serif;
+	text-align: center;
+	background-color: saddlebrown;
+	color: gold;
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+.jumbotron .btn {
+	border: 2px solid gold;
+	color: gold;
 }
 
-header, footer {
+footer {
 	background-color: saddlebrown;
 	color: gold;
 	height: 100px;
@@ -25,23 +35,20 @@ header, footer {
 	padding: 30px 10px 20px 10px;
 }
 
+/* Navigation bar styles */
 nav {
 	background-color: sandybrown;
 	border-top: 4px dashed black;
 	border-bottom: 4px dashed black;
 	padding: 10px 0px 10px 0px;
 }
-
 nav .btn {
-	/*
 	background-color: saddlebrown;
 	border: 2px solid black;
-	*/
 	color: yellow;
 }
-
 nav .btn:visited {
-	color: darkred;
+	color: orange;
 }
 
 /* Add a gap between the navigation buttons and the main content */
