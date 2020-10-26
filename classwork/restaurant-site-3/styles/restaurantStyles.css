@@ -1,7 +1,9 @@
 /*
-Creator: William King
-Date created: 17/10/2020
-Date last modified: 19/10/2020
+Name: William King
+Restaurant Site
+Date Created: 17/10/2020
+Most recent revision: 26/10/2020
+Submission Date: 26/10/2020
 */
 
 /* Online fonts from google (Patua One and Roboto Slab) */
@@ -65,7 +67,8 @@ a:visited {
 	color: red;
 }
 
-a:hover {
+/* 'i' includes the home icon */
+a:hover, i:hover {
 	font-weight: bold;
 }
 
